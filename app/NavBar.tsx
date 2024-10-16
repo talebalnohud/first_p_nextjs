@@ -15,12 +15,13 @@ const NavBar = () => {
       <Link href="/users">Users</Link>
       <Link href="/admin">Admin</Link>
       <Link href="/product">Product</Link>
-      {status === "authenticated" && <div>{session.user!.name}</div>}
       {status === "authenticated" && (
-        <img
-          src={session.user!.image}
-          className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-        />
+        <div>
+          {session.user!.name}
+          <Link href="/api/auth/signout" className="ml-3">
+            Sign Out
+          </Link>
+        </div>
       )}
       {status === "unauthenticated" && (
         <Link href="/api/auth/signin">Login</Link>
