@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { CldUploadWidget } from "next-cloudinary";
-
+//cloudinary is here
 interface CloudinaryResult {
   public_id: string;
 }
@@ -31,6 +31,3 @@ const UploadPage = () => {
 };
 
 export default UploadPage;
-
-
-
