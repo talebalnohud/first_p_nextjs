@@ -8,7 +8,7 @@ const GoogleAnelyticsScript = () => {
         async
         src="https://www.googletagamanager.com/gatg/js?id=G-E720JHXSJ1"
       />
-      <Script>
+      <Script id="google-analytics">
         {`window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
