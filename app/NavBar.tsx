@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 
 const NavBar = () => {
-  // console.log(process.env.GOOGLE_CLIENT_SECRET!);
   const { status, data: session } = useSession();
 
   return (
